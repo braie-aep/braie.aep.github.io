@@ -35,8 +35,8 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  width: 100px;
-  height: 100px;
+  width: 700px;
+  height: 700px;
   object-fit: cover;
   border-radius: 50%;
   border: 2px solid #facc15;
