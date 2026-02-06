@@ -1,4 +1,6 @@
-/* RESET */
+/* =========================
+   RESET & BASE
+========================= */
 body {
   margin: 0;
   padding: 0;
@@ -7,22 +9,21 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* CONTAINER */
 .container {
   max-width: 1000px;
   margin: auto;
-  padding: 50px 24px;
+  padding: 40px 24px;
 }
 
 /* =========================
-   NAME + PHOTO (HERO)
+   NAME + PHOTO (TOP)
 ========================= */
 .name-section {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 20px; /* FIXED: reduced space */
 }
 
 /* LEFT TEXT */
@@ -38,7 +39,7 @@ body {
 }
 
 .name-role {
-  margin-top: 8px;
+  margin-top: 6px;
   font-size: 18px;
   color: #eab308;
 }
@@ -54,22 +55,27 @@ body {
 }
 
 /* =========================
-   HEADINGS & TEXT
+   SECTIONS & HEADINGS
 ========================= */
+section {
+  margin-top: 10px; /* keeps sections tight */
+}
+
 h2 {
-  margin-top: 50px;
+  margin-top: 28px;   /* FIXED: reduced top space */
   margin-bottom: 12px;
   color: #e5e7eb;
 }
 
 p {
+  margin: 6px 0;
   line-height: 1.6;
   color: #e5e7eb;
 }
 
 .subtitle {
   color: #cbd5f5;
-  margin-top: 8px;
+  margin-top: 6px;
 }
 
 /* =========================
@@ -93,7 +99,7 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 22px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .project-card {
@@ -124,40 +130,10 @@ a:hover {
 .profile-links {
   list-style: none;
   padding: 0;
-  margin-top: 24px;
+  margin-top: 20px;
 }
 
 .profile-links li {
   margin-bottom: 14px;
   font-size: 15px;
-}
-
-/* =========================
-   MOBILE RESPONSIVE
-========================= */
-@media (max-width: 768px) {
-  .name-section {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .top-profile-photo {
-    width: 180px;
-    height: 180px;
-  }
-
-  .main-name {
-    font-size: 42px;
-  }
-}
-
-@media (max-width: 480px) {
-  .top-profile-photo {
-    width: 150px;
-    height: 150px;
-  }
-
-  .main-name {
-    font-size: 36px;
-  }
 }
