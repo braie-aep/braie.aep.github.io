@@ -15,7 +15,8 @@ body {
 /* NAME SECTION */
 .name-section {
   position: relative;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  min-height: 220px;
 }
 
 .main-name {
@@ -27,20 +28,28 @@ body {
 
 .name-role {
   color: #eab308;
-  margin-top: 5px;
+  margin-top: 6px;
 }
 
-/* TOP RIGHT PHOTO */
+/* TOP RIGHT PROFILE PHOTO (FIXED & RESPONSIVE) */
 .top-profile-photo {
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 700px;
-  height: 700px;
+  top: -20px;
+  right: -20px;
+
+  width: 18vw;
+  height: 18vw;
+
+  max-width: 180px;
+  max-height: 180px;
+
+  min-width: 120px;
+  min-height: 120px;
+
   object-fit: cover;
   border-radius: 50%;
-  border: 2px solid #facc15;
-  box-shadow: 0 0 12px rgba(250, 204, 21, 0.7);
+  border: 3px solid #facc15;
+  box-shadow: 0 0 22px rgba(250, 204, 21, 0.85);
 }
 
 /* HEADINGS */
@@ -102,4 +111,18 @@ a:hover {
 .profile-links li {
   margin-bottom: 12px;
   font-size: 15px;
+}
+
+/* MOBILE ADJUSTMENT */
+@media (max-width: 600px) {
+  .top-profile-photo {
+    width: 100px;
+    height: 100px;
+    top: 0;
+    right: 0;
+  }
+
+  .name-section {
+    min-height: 180px;
+  }
 }
