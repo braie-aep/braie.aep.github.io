@@ -1,12 +1,13 @@
+/* BASE */
 body {
   margin: 0;
-  background-color: #141414;
-  color: #141414;
+  background-color: #000000; /* PURE BLACK */
+  color: #ffffff;
   font-family: Arial, sans-serif;
 }
 
 .container {
-  max-width: 200px;
+  max-width: 900px;
   margin: auto;
   padding: 40px 20px;
 }
@@ -52,14 +53,22 @@ h2 {
   color: #cbd5f5;
 }
 
-/* LINKS */
+/* =========================
+   LINKS & EMAIL GLOW
+========================= */
 a {
   color: #facc15;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
+/* GLOW ON HOVER (LINKS + EMAIL) */
 a:hover {
   color: #fde047;
+  text-shadow: 
+    0 0 6px rgba(250, 204, 21, 0.8),
+    0 0 12px rgba(250, 204, 21, 0.6),
+    0 0 20px rgba(250, 204, 21, 0.4);
 }
 
 /* PROJECTS */
@@ -70,9 +79,18 @@ a:hover {
 }
 
 .project-card {
-  background-color: #020617;
+  background-color: #050505; /* slight contrast on black */
   padding: 20px;
   border-radius: 10px;
+}
+
+/* PROJECT LINKS (BUTTON FEEL) */
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #facc15;
 }
 
 /* PROFILE LINKS */
@@ -85,3 +103,7 @@ a:hover {
   margin-bottom: 8px;
 }
 
+/* SMOOTH EXPERIENCE */
+* {
+  box-sizing: border-box;
+}
