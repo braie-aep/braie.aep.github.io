@@ -12,8 +12,9 @@ body {
   padding: 40px 20px;
 }
 
-/* NAME */
+/* NAME SECTION */
 .name-section {
+  position: relative;
   margin-bottom: 30px;
 }
 
@@ -29,14 +30,23 @@ body {
   margin-top: 5px;
 }
 
-/* TITLES */
+/* TOP RIGHT PHOTO */
+.top-profile-photo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #facc15;
+  box-shadow: 0 0 12px rgba(250, 204, 21, 0.7);
+}
+
+/* HEADINGS */
 h2 {
   margin-top: 40px;
   color: #e5e7eb;
-}
-
-.role-title {
-  margin-top: 40px;
 }
 
 .subtitle {
@@ -62,7 +72,7 @@ h2 {
   color: #38bdf8;
 }
 
-/* LINKS – GOLD GLOW */
+/* GOLD GLOW LINKS */
 a {
   color: #facc15;
   text-decoration: none;
